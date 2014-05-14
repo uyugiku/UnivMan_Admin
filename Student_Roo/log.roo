@@ -1,0 +1,35 @@
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-05-04 21:27:04
+project --topLevelPackage com.univman --projectName Student_Roo --java 7 --packaging JAR
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-05-04 21:27:52
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-05-04 21:28:39
+web mvc setup
+jpa setup --provider HIBERNATE --database MYSQL --hostName localhost --databaseName spring --userName root --password kurumano1177
+entity jpa --class ~.studentm.Studentm --testAutomatically 
+field string --fieldName name --notNull 
+field string --fieldName mail --notNull 
+field boolean --fieldName finished --notNull 
+web mvc all --package com.univman.studentm
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-05-05 10:27:47
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-05-05 13:23:53
+entity jpa --class ~.finishedStudent.FinishedStudent --testAutomatically --table student
+field string --fieldName name --notNull 
+field string --fieldName mail --notNull 
+field boolean --fieldName finished --notNull 
+web mvc all --package com.univman.finishedstudent
+finder list --class ~.studentm.Studentm
+finder add findStudentmsByName
+web mvc finder all
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-05-06 15:40:40
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-05-09 13:06:55
+entity jpa --class ~.infomation.Infomation --testAutomatically
+field string --fieldName title --notNull
+field date --fieldName informationDate --type java.util.Date
+field string --fieldName body --notNull
+web mvc all --package com.univman.infomation
+focus --class ~.infomation.Infomation
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-05-09 14:50:37
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-05-10 13:44:37
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-05-10 13:52:31
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-05-12 03:06:18
+security setup
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-05-12 12:07:23

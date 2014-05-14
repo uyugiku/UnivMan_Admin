@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_univman_finishedstudent_FinishedStudent" modelAttribute="finishedStudent" path="/finishedstudents" render="${empty dependencies}" z="youMt9JIzNJr9AyXQ3bxvhwPYII=">
+        <field:input field="name" id="c_com_univman_finishedstudent_FinishedStudent_name" required="true" z="4i1z5kq5PCxvW64Klye3S+srmmo="/>
+        <field:input field="mail" id="c_com_univman_finishedstudent_FinishedStudent_mail" required="true" z="vVw52CpRFboV2TCxDSctXy8aRKo="/>
+        <field:checkbox field="finished" id="c_com_univman_finishedstudent_FinishedStudent_finished" render="false" z="user-managed"/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_univman_finishedstudent_FinishedStudent" render="${not empty dependencies}" z="Md/iuJo+FxHAkoLY91J0jNL+Kcs="/>
+</div>

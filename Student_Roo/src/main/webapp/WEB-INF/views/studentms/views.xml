@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="studentms/list">
+        <put-attribute name="body" value="/WEB-INF/views/studentms/list.jspx"/>
+    </definition>
+<definition extends="default" name="studentms/show">
+        <put-attribute name="body" value="/WEB-INF/views/studentms/show.jspx"/>
+    </definition>
+<definition extends="default" name="studentms/create">
+        <put-attribute name="body" value="/WEB-INF/views/studentms/create.jspx"/>
+    </definition>
+<definition extends="default" name="studentms/update">
+        <put-attribute name="body" value="/WEB-INF/views/studentms/update.jspx"/>
+    </definition>
+<definition extends="default" name="studentms/findStudentmsByName">
+        <put-attribute name="body" value="/WEB-INF/views/studentms/findStudentmsByName.jspx"/>
+    </definition>
+<definition extends="default" name="studentms/findStudentmsByNameAndMail">
+        <put-attribute name="body" value="/WEB-INF/views/studentms/findStudentmsByNameAndMail.jspx"/>
+    </definition>
+<definition extends="default" name="studentms/findStudentmsByNameAndMailLike">
+        <put-attribute name="body" value="/WEB-INF/views/studentms/findStudentmsByNameAndMailLike.jspx"/>
+    </definition>
+<definition extends="default" name="studentms/findStudentmsByNameLikeAndMailLike">
+        <put-attribute name="body" value="/WEB-INF/views/studentms/findStudentmsByNameLikeAndMailLike.jspx"/>
+    </definition>
+</tiles-definitions>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_univman_finishedstudent_FinishedStudent" items="${finishedstudents}" z="YjjUCS76Gx4IviKdUmhsijM+8YQ=">
+        <table:table data="${finishedstudents}" id="l_com_univman_finishedstudent_FinishedStudent" path="/finishedstudents" z="Iiu7jYKIZwoEqdsYpa6RmxgLu60=">
+            <table:column id="c_com_univman_finishedstudent_FinishedStudent_name" property="name" z="5xz11Z4y/EVq6FLtU7Pxu1IdmPc="/>
+            <table:column id="c_com_univman_finishedstudent_FinishedStudent_mail" property="mail" z="xHAPdxaogjNgR6mdZHes4OpaQJE="/>
+            <table:column id="c_com_univman_finishedstudent_FinishedStudent_finished" property="finished" render="false" z="user-managed"/>
+        </table:table>
+    </page:list>
+</div>
